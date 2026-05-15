@@ -52,7 +52,7 @@
 
 | 来源 | 聊天记录 | 照片 | 社交媒体 | 备注 |
 |------|:-------:|:----:|:-------:|------|
-| 微信聊天记录 | ✅ | — | — | WechatExporter 等工具导出 |
+| 微信聊天记录 | ✅ | — | — | TXT/CSV/HTML/XLSX（WeFlow 等工具导出） |
 | iMessage | ✅ | — | — | macOS chat.db 或导出文件 |
 | 短信 | ✅ | — | — | Android SMS Backup XML/CSV |
 | 照片 | — | ✅ | — | EXIF 元数据提取时间线 |
