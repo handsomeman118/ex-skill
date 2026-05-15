@@ -1,0 +1,8 @@
+# Optional: Chinese name → slug conversion
+pypinyin>=0.48.0
+
+# Optional: Parse WeChat XLSX exports (WeFlow etc.)
+openpyxl>=3.0.0
+
+# Optional: Better EXIF support for more image formats (HEIC, TIFF, etc.)
+# Pillow>=10.0.0
