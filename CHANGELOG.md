@@ -12,7 +12,7 @@
 
 | 来源 | 格式 | 双向对话 | 编码容错 |
 |------|------|:--------:|:--------:|
-| 微信聊天记录 | TXT / CSV / HTML | 支持 | UTF-8 + GBK 降级 |
+| 微信聊天记录 | TXT / CSV / HTML / XLSX | 支持 | UTF-8 + GBK 降级 |
 | iMessage | TXT / CSV / chat.db | 支持 | UTF-8 + GBK 降级 |
 | 短信 | XML / CSV / TXT | 支持 | UTF-8 + GBK 降级 |
 | 照片 | 文件夹扫描 | — | EXIF 提取（JPEG） |
@@ -50,11 +50,12 @@
 
 ### 人格系统（Part B）
 
-6 层结构：
+7 层结构：
 
 | 层级 | 内容 |
 |------|------|
 | Layer 0 | 硬规则（绝对不能做的事） |
+| Layer 0.5 | 回复决策表（消息类型 × 情绪状态 → 回复行为） |
 | Layer 1 | 身份（基本信息、关系状态） |
 | Layer 2 | 表达风格（消息习惯、语气词、emoji 偏好） |
 | Layer 3 | 情感逻辑（安全感需求、情绪表达方式） |
@@ -227,8 +228,8 @@ ex-skill/
 │   ├── event_extractor.md       #   事件提取 prompt（含单方面消息策略）
 │   ├── memories_analyzer.md     #   跨事件模式分析（6 维度）
 │   ├── memories_builder.md      #   memories.md 生成模板（9 模块）
-│   ├── persona_analyzer.md      #   性行为提取（含标签翻译表）
-│   ├── persona_builder.md       #   persona.md 6 层结构模板
+│   ├── persona_analyzer.md      #   性行为提取（含标签翻译表 + 回复决策模式）
+│   ├── persona_builder.md       #   persona.md 7 层结构模板（含 Layer 0.5）
 │   ├── merger.md                #   增量 merge 逻辑
 │   └── correction_handler.md    #   对话纠正处理（双路由）
 ├── tools/
@@ -237,11 +238,10 @@ ex-skill/
 │   ├── sms_parser.py            #   短信解析
 │   ├── photo_analyzer.py        #   照片 EXIF 元数据分析
 │   ├── social_media_parser.py   #   社交媒体解析
-│   ├── event_clusterer.py       #   事件聚类（segment/merge/list/summary）
-│   ├── skill_writer.py          #   Skill 文件管理（create/update/list）
+│   ├── event_clusterer.py       #   事件聚类（segment/merge/list/summary/density）
+│   ├── skill_writer.py          #   Skill 文件管理（含原始材料归档）
 │   └── version_manager.py       #   版本管理（list/backup/rollback/cleanup）
 ├── exes/                        #   生成的前任 Skill（运行时创建）
-├── docs/PRD.md
 ├── requirements.txt
 └── LICENSE
 ```
