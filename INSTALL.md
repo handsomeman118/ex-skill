@@ -14,10 +14,10 @@ cd $(git rev-parse --show-toplevel)
 
 # 方式 1：安装到当前项目
 mkdir -p .claude/skills
-git clone https://github.com/perkfly/ex-skill .claude/skills/create-ex
+git clone https://github.com/handsomeman118/ex-skill .claude/skills/create-ex
 
 # 方式 2：安装到全局（所有项目都能用）
-git clone https://github.com/perkfly/ex-skill ~/.claude/skills/create-ex
+git clone https://github.com/handsomeman118/ex-skill ~/.claude/skills/create-ex
 ```
 
 然后在 Claude Code 中说 `/create-ex` 即可启动。
@@ -29,7 +29,7 @@ git clone https://github.com/perkfly/ex-skill ~/.claude/skills/create-ex
 ### B. OpenClaw
 
 ```bash
-git clone https://github.com/perkfly/ex-skill ~/.openclaw/workspace/skills/create-ex
+git clone https://github.com/handsomeman118/ex-skill ~/.openclaw/workspace/skills/create-ex
 ```
 
 重启 OpenClaw session，说 `/create-ex` 启动。

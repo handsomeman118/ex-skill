@@ -2,7 +2,7 @@
 
 # 前任.skill（增强版）
 
-> *Fork 自 [perkfly/ex-skill](https://github.com/perkfly/ex-skill)，在此基础上增加了事件聚类、回复决策、原始材料归档等功能。*
+> *基于 [perkfly/ex-skill](https://github.com/perkfly/ex-skill) 开发，增加了事件聚类、回复决策、原始材料归档等功能。*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)
@@ -31,7 +31,7 @@
 
 ## 与原项目的区别
 
-本 Fork 在 [perkfly/ex-skill](https://github.com/perkfly/ex-skill) 基础上做了以下改进：
+本项目基于 [perkfly/ex-skill](https://github.com/perkfly/ex-skill) 开发，做了以下改进：
 
 | 类别 | 改进内容 |
 |------|----------|
@@ -46,7 +46,7 @@
 
 详细的改进记录见 [CHANGELOG.md](CHANGELOG.md)。
 
-### 为什么做这个 Fork
+### 为什么做这个项目
 
 我对 ex-skills 的修改是因为我发现 ex-skills 可能更多的是偏蒸馏，对一个人的描述太简单了，还有个原因可能是大模型当时并没有很多支持 1m 长上下文。这样的感情太假了，其实我也不好说是真是假，毕竟都用 ex-skills 了还管那些真的是又当又立。反正就是我从记忆下手进行了修改，因为我想知道最真实的回复，所以对于记忆的处理不再是简单的总结概括与查找，而是两个人之间发生的故事的分析。但是仍有缺点，比如 ai 确实不是很能够理解人类的抽象语言之类的，有一些事件的理解其实是有失偏颇的，比如抽象文案啥的，他会认为这是你们之间的暧昧故事，并且事件总结之前也会概括事件，导致理解不恰当。但是我也不想再去深究与修改，改完做了测试其实我也不知道我具体真的想要什么，我要是像 ai 这么傻逼直白就好了，难受了。
 
@@ -246,10 +246,16 @@ ex-skill/
 
 ---
 
+## 致谢
+
+- [perkfly/ex-skill](https://github.com/perkfly/ex-skill) — 本项目的原始版本，感谢 [perkfly](https://github.com/perkfly) 的创意和基础实现
+
+---
+
 <div align="center">
 
-MIT License © [perkfly](https://github.com/perkfly)（原作者）
+MIT License © [handsomeman118](https://github.com/handsomeman118)
 
-本 Fork 由 [handsomeman118](https://github.com/handsomeman118) 维护
+基于 [perkfly/ex-skill](https://github.com/perkfly/ex-skill) 开发，原项目由 [perkfly](https://github.com/perkfly) 创建
 
 </div>

@@ -54,10 +54,10 @@ Uses her texting style, knows when she's being cute vs. actually angry
 ```bash
 # Install to current project
 mkdir -p .claude/skills
-git clone https://github.com/perkfly/ex-skill .claude/skills/create-ex
+git clone https://github.com/handsomeman118/ex-skill .claude/skills/create-ex
 
 # Or install globally
-git clone https://github.com/perkfly/ex-skill ~/.claude/skills/create-ex
+git clone https://github.com/handsomeman118/ex-skill ~/.claude/skills/create-ex
 ```
 
 ### Dependencies (optional)
@@ -126,8 +126,16 @@ Ex.skill  > oh
 
 ---
 
+## Acknowledgments
+
+- [perkfly/ex-skill](https://github.com/perkfly/ex-skill) — The original version of this project. Thanks to [perkfly](https://github.com/perkfly) for the creative concept and foundation.
+
+---
+
 <div align="center">
 
-MIT License © [perkfly](https://github.com/perkfly)
+MIT License © [handsomeman118](https://github.com/handsomeman118)
+
+Based on [perkfly/ex-skill](https://github.com/perkfly/ex-skill), originally created by [perkfly](https://github.com/perkfly)
 
 </div>
